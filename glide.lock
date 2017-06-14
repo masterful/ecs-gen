@@ -1,5 +1,5 @@
 hash: a9d548786b8e96242b975627eebadb086ec19d4faf4387aea6f85a65d1381fe8
-updated: 2016-11-25T16:02:48.473016392+09:00
+updated: 2017-06-14T17:42:17.578108165-04:00
 imports:
 - name: github.com/alecthomas/template
   version: a0175ee3bccc567396460bf5acd36800cb10c49c
@@ -8,7 +8,7 @@ imports:
 - name: github.com/alecthomas/units
   version: 2efee857e7cfd4f3d0138cc3cbb1b4966962b93a
 - name: github.com/aws/aws-sdk-go
-  version: 4a6ff995f57ee4f8994db17ae83f01a9c9cc2274
+  version: 47ba3b0518c83189f3a1c95d20fc22f267e02ed3
   subpackages:
   - aws
   - aws/awserr
@@ -22,10 +22,11 @@ imports:
   - aws/credentials/stscreds
   - aws/defaults
   - aws/ec2metadata
+  - aws/endpoints
   - aws/request
   - aws/session
   - aws/signer/v4
-  - private/endpoints
+  - internal/shareddefaults
   - private/protocol
   - private/protocol/ec2query
   - private/protocol/json/jsonutil
@@ -34,7 +35,6 @@ imports:
   - private/protocol/query/queryutil
   - private/protocol/rest
   - private/protocol/xml/xmlutil
-  - private/waiter
   - service/ec2
   - service/ecs
   - service/sts
