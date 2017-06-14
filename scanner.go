@@ -124,7 +124,7 @@ func (s *scanner) extractContainer(t *ecs.Task, cd *ecs.ContainerDefinition) (*c
 		return nil, errors.New("[" + *cd.Name + "] no valid port configuration found. skipping")
 	}
 	return &container{
-		Name:    *cd.Name,
+		Name:    strings.Replace(*t.Group, ":", "_", -1),
 		Host:    virtualHost,
 		Port:    port,
 		Env:     envVariables,
